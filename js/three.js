@@ -5,7 +5,6 @@ import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/exampl
 // Initialize scene
 const scene = new THREE.Scene();
 
-console.log('dasads:', scene);
 // Initialize camera
 const camera = new THREE.PerspectiveCamera(
   30,
@@ -31,7 +30,6 @@ document.body.appendChild(renderer.domElement);
 //! Initialize controls
 const controls = new OrbitControls(camera, renderer.domElement);
 
-console.log('controls:', controls);
 // Load world texture
 const worldTexture = new THREE.TextureLoader().load('images/world.jpg');
 
