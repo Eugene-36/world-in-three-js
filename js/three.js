@@ -33,7 +33,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 
 console.log('controls:', controls);
 // Load world texture
-const worldTexture = new THREE.TextureLoader().load('world.jpg');
+const worldTexture = new THREE.TextureLoader().load('images/world.jpg');
 
 // Initialize world geometry
 const worldGeometry = new THREE.SphereGeometry(1, 40, 40);
@@ -50,7 +50,7 @@ const world = new THREE.Mesh(worldGeometry, worldMaterial);
 scene.add(world);
 
 // Load clouds texture
-const cloudTexture = new THREE.TextureLoader().load('clouds.png');
+const cloudTexture = new THREE.TextureLoader().load('images/clouds.png');
 
 // Initialize clouds geometry
 const cloudGeometry = new THREE.SphereGeometry(1.01, 40, 40);
